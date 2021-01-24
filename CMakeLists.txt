@@ -31,4 +31,4 @@ else()
 endif()
 
 install(FILES src/sqlite3.h src/sqlite3ext.h DESTINATION include)
-install(TARGETS sqlite3 LIBRARY DESTINATION lib ARCHIVE DESTINATION lib)
+install(TARGETS sqlite3 EXPORT SQLite3 LIBRARY DESTINATION lib ARCHIVE DESTINATION lib)
